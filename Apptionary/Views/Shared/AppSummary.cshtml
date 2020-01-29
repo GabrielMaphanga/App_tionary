@@ -1,0 +1,210 @@
+﻿@model App
+
+
+
+<div class="card card-outline-primary m-1 p-1">
+    <div class="bg-faded p-1">
+        <h4>@Model.Name</h4>
+        @{ switch (Model.Name)
+        {
+            case "facebook":
+                <a href="https://www.facebook.com/"><img src="~/images/facebook.jpg" alt="facebook" width="50" height="50" /></a>
+            break;
+                case "twitter":
+                    <a href="https://www.twitter.com/"><img src="~/images/twitter.jpg" alt="twitter" width="50" height="50" /></a>
+                            break;
+                case "instagram":
+                    <a href="https://www.instagram.com/"><img src="~/images/intagram.jpg" alt="instagram" width="50" height="50" /></a>
+                break;
+                                case "candy crush saga":
+                        <a href="https://king.com/play/candycrush"><img src="~/images/candy_crush_saga_key_art.jpg" alt="facebook" width="50" height="50" /></a>
+                    break;
+                    case "bible":
+                        <a href="https://www.bible.com/"><img src="~/images/bibleIcon.jpg" alt="facebook" width="50" height="50" /></a>
+                    break;
+                    case "bike racing 3d":
+                        <a href="https://bike-racing-3d.en.uptodown.com/android"><img src="~/images/bike racing 3d.png" alt="twitter" width="50" height="50" /></a>
+                    break;
+                    case "subway surfers":
+                        <a href="https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf&hl=en_ZA"><img src="~/images/subway sufers.jpg" alt="instagram" width="50" height="50" /></a>
+                    break;
+                    case "vlc":
+                        <a href="https://www.videolan.org/vlc/download-windows.html"><img src="~/images/vlc.jpg" alt="vlc" width="50" height="50" /></a>
+                    break;
+                    case "new24":
+                        <a href="https://www.news24.com/Mobile/Download-News24-on-your-Mobile-20140606"><img src="~/images/new24.jpg" alt="new24" width="50" height="50" /></a>
+                    break;
+                    case "uber":
+                        <a href="https://www.uber.com/en-ZA/"><img src="~/images/uber.png" alt="uber" width="50" height="50" /></a>
+                    break;
+                    case "modern sniper":
+                        <a href="https://modern-sniper.en.uptodown.com/android"><img src="~/images/mordern snippper.jpg" alt="modern snipper" width="50" height="50" /></a>
+
+                    break;
+                    case "whatsApp messenger":
+                        <a href="https://www.whatsapp.com/"><img src="~/images/whatsapp_pixabay_1-2.jpg" alt="whats app" width="50" height="50" /></a>
+
+                    break;
+                    case "wordweb":
+                        <a href="https://play.google.com/store/apps/details?id=com.wordwebsoftware.android.wordweb"><img src="~/images/wordweb.jpg" alt="word web" width="50" height="50" /></a>
+                    break;
+                    case "snapchat":
+                        <a href="https://play.google.com/store/apps/details?id=com.snapchat.android"><img src="~/images/snapchat.png" alt="word web" width="50" height="50" /></a>
+
+                    break;
+                    case "kik":
+                        <a href="https://play.google.com/store/apps/details?id=kik.android"><img src="~/images/kik.jpg" alt="word web" width="50" height="50" /></a>
+
+                    break;
+                    case "spotify":
+                        <a href="https://www.spotify.com/za/"><img src="~/images/spotify.png" alt="spotify" width="50" height="50" /></a>
+                    break;
+                    case "ubuntu":
+                        <a href="https://www.ubuntu.com/desktop"><img src="~/images/ubuntu.png" alt="ubuntu" width="50" height="50" /></a>
+                    break;
+                    case "windows xp":
+                        <a href="https://en.wikipedia.org/wiki/Windows_XP"><img src="~/images/windowxp.jpg" alt="windows_xp" height="50" width="50" /></a>
+                    break;
+                    case "android":
+                        <a href="https://www.android.com/"><img src="~/images/android.jpg" alt="android" height="50" width="50" /></a>
+                    break;
+                    case "iOS":
+                        <a href="https://support.apple.com/downloads/ios"><img src="~/images/ios.png" alt="iOS" height="50" width="50" /></a>
+                    break;
+                    case "windows vista":
+                        <a href="https://en.wikipedia.org/wiki/Windows_Vista"><img src="~/images/vista.jpg" height="50" width="50" /></a>
+                    break;
+                    case "windows 7":
+                        <a href="https://en.wikipedia.org/wiki/Windows_7"><img src="~/images/windows7.jpg" height="50" width="50" /></a>
+                    break;
+                    case "windows 8":
+                        <a href="https://en.wikipedia.org/wiki/Windows_8"><img src="~/images/windows8.png" height="50" width="50" /></a>
+                    break;
+                    case "windows 8.1":
+                        <a href="https://en.wikipedia.org/wiki/Windows_8.1"><img src="~/images/windows-8.1-logo.png" height="50" width="50" /></a>
+                    break;
+                    case "windows 10":
+                        <a href="https://en.wikipedia.org/wiki/Windows_10"><img src="~/images/windows10.png" height="50" width="50" /></a>
+                        break;
+                    case "macOS":
+                    <a href="https://en.wikipedia.org/wiki/MacOS"><img src="~/images/macOS.png" alt="macOS" height="50" width="50" /></a>
+                    break;
+
+
+
+                }
+            }
+        <p style="justify-content:center">@Model.Description</p>
+        @{
+        switch (Model.Name)
+        {
+            case "modern sniper":
+
+                <a class="btn btn-primary" href="//modern-sniper.en.uptodown.com/android">download</a>
+
+
+            break;
+        case "facebook":
+            <a class="btn btn-outline-primary" href="https://facebook.en.uptodown.com/android/download">download</a>
+
+
+            <a href="https://facebook-toolbar.en.uptodown.com/mac/download" class="float-right"><img src="~/images/apple.jpg" alt="ios" height="40" width="40" /></a>
+
+            <a href="https://www.microsoft.com/store/productId/9WZDNCRFJ2WL" class="float-right"><img src="~/images/windowsStore.png" alt="windows" width="40" height="40" /></a>
+
+            <a href="https://play.google.com/store/apps/details?id=com.facebook.katana" class="float-right"><img src="~/images/googlePlayStore.png" width="40" height="40" /></a>
+
+            <a href="https://facebook.en.uptodown.com/iphone/download" class="float-right"><img src="~/images/appleapp.jpg"  width="40" height="40" /></a>
+
+
+
+        break;
+
+    case "twitter":
+        <a class="btn btn-outline-primary" href="https://twitter.en.uptodown.com/android/download">download</a>
+
+    break;
+            case "instagram":
+                <a class="btn btn-outline-primary" href="https://instagram.en.uptodown.com/android/download">download</a>
+
+
+            break;
+            case "candy crush saga":
+                <a class="btn btn-outline-primary" href="https://candy-crush-saga.en.uptodown.com/android/download">download</a>
+            break;
+            case "bible":
+                <a class="btn btn-outline-primary" href="https://bible.en.uptodown.com/android/download">download</a>
+            break;
+            case "bike racing 3d":
+                <a class="btn btn-outline-primary" href="https://bike-racing-3d.en.uptodown.com/android/download">download</a>
+            break;
+            case "subway surfers":
+                <a class="btn btn-outline-primary" href="https://subway-surfers.en.uptodown.com/android/download">download</a>
+            break;
+            case "vlc":
+                <a class="btn btn-outline-primary" href="https://vlc.en.uptodown.com/android">download</a>
+            break;
+            case "new24":
+                <a class="btn btn-outline-primary" href="https://play.google.com/store/apps/details?id=com.news24.ui.core">download</a>
+            break;
+            case "uber":
+                <a class="btn btn-outline-primary" href="https://uber.en.uptodown.com/android/download">download</a>
+            break;
+
+            case "whatsApp messenger":
+                <a class="btn btn-outline-primary" href="https://whatsapp-messenger.en.uptodown.com/android/download">download</a>
+            break;
+            case "wordweb":
+
+                <a class="btn btn-outline-primary" href="https://wordweb.en.uptodown.com/android/download">download</a>
+            break;
+            case "snapchat":
+                <a class="btn btn-outline-primary" href="https://snapchat.en.uptodown.com/android/download">download</a>
+            break;
+            case "kik":
+                <a class="btn btn-outline-primary" href="https://kik-messenger.en.uptodown.com/android/download">download</a>
+
+            break;
+            case "spotify":
+                <a class="btn btn-outline-primary" href="https://spotify.en.uptodown.com/android/download">download</a>
+            break;
+            case "ubuntu":
+                <a class="btn btn-outline-primary" href="https://www.ubuntu.com/download/desktop">download</a>
+            break;
+            case "windows xp":
+                <a class="btn btn-outline-primary" href="https://www.microsoft.com/en-us/Download/confirmation.aspx?id=18242">download</a>
+            break;
+
+            case "android":
+                <a class="btn btn-outline-primary"" href="http://www.android-x86.org/download">download</a>
+            break;
+            case "iOS":
+                <a class="btn btn-outline-primary" href="https://ipsw.me/">download</a>
+            break;
+            case "windows vista":
+                <a class="btn btn-outline-primary" href="https://www.microsoft.com/en-US/Download/confirmation.aspx?id=7120">download</a>
+            break;
+            case "windows 7":
+                <a class="btn btn-outline-primary" href="https://www.microsoft.com/en-nz/download/details.aspx?id=5842">download</a>
+            break;
+            case "windows 8":
+                <a class="btn btn-outline-primary" href="https://www.microsoft.com/en-us/software-download/windows8ISO">download</a>
+            break;
+
+            case "windows 8.1":
+                <a class="btn btn-outline-primary" href="https://www.microsoft.com/en-us/software-download/windows8ISO">download</a>
+            break;
+            case "windows 10":
+                <a class="btn btn-outline-primary" href="https://www.microsoft.com/en-gb/software-download/windows10">download</a>
+                        break;
+                    case "macOS":
+                    <a class="btn btn-outline-primary" href="https://support.apple.com/downloads/macos">download</a>
+                    break;
+
+
+
+            }
+            }
+
+    </div>
+</div>

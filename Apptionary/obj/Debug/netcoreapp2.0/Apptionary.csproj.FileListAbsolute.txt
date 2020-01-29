@@ -1,0 +1,12 @@
+C:\Users\Gabriel Maphanga\source\repos\Apptionary\Apptionary\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\Gabriel Maphanga\source\repos\Apptionary\Apptionary\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+C:\Users\Gabriel Maphanga\source\repos\Apptionary\Apptionary\bin\Debug\netcoreapp2.0\Apptionary.deps.json
+C:\Users\Gabriel Maphanga\source\repos\Apptionary\Apptionary\bin\Debug\netcoreapp2.0\Apptionary.runtimeconfig.json
+C:\Users\Gabriel Maphanga\source\repos\Apptionary\Apptionary\bin\Debug\netcoreapp2.0\Apptionary.runtimeconfig.dev.json
+C:\Users\Gabriel Maphanga\source\repos\Apptionary\Apptionary\bin\Debug\netcoreapp2.0\Apptionary.dll
+C:\Users\Gabriel Maphanga\source\repos\Apptionary\Apptionary\bin\Debug\netcoreapp2.0\Apptionary.pdb
+C:\Users\Gabriel Maphanga\source\repos\Apptionary\Apptionary\obj\Debug\netcoreapp2.0\Apptionary.csprojAssemblyReference.cache
+C:\Users\Gabriel Maphanga\source\repos\Apptionary\Apptionary\obj\Debug\netcoreapp2.0\Apptionary.AssemblyInfoInputs.cache
+C:\Users\Gabriel Maphanga\source\repos\Apptionary\Apptionary\obj\Debug\netcoreapp2.0\Apptionary.AssemblyInfo.cs
+C:\Users\Gabriel Maphanga\source\repos\Apptionary\Apptionary\obj\Debug\netcoreapp2.0\Apptionary.dll
+C:\Users\Gabriel Maphanga\source\repos\Apptionary\Apptionary\obj\Debug\netcoreapp2.0\Apptionary.pdb

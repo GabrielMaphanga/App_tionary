@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+    <link href="~/css/site.css" rel="stylesheet" />
+
+    <title>Apptionary</title>
+</head>
+<body>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+
+                <img src="~/images/logo.png" class="img-circle" alt="apptionary" height="150" />
+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item active">
+
+                        <a class="nav-link" href="#">
+                            Home
+
+                            <span class="sr-only">(current)</span>
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">About</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">Services</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">Contact</a>
+
+                    </li>
+
+
+
+
+                </ul>
+
+
+
+
+            </div>
+
+        </div>
+        <div style="text-align:right;">
+            <form asp-controller="App" asp-action="List" class="form-inline active-purple-3 active-purple-4">
+                <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search an app!" name="SearchString" aria-label="Search">
+                <i class="fa fa-search" aria-hidden="true" ></i>
+                <button class="btn" type="submit" value="search" ><i class="icon-search"></i></button>
+            </form>
+
+        </div>
+
+    </nav>
+
+    <div class="visible-xs">
+
+        @await Component.InvokeAsync("NavigationMenu", new { horizontalLayout = true })
+
+    </div>
+
+
+    <div  class="row panel">
+        <div class="col-sm-3 hidden-xs">
+            @await Component.InvokeAsync("NavigationMenu")
+        </div>
+        <div class="col-xs-12 col-sm-8">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>

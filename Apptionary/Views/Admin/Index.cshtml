@@ -1,0 +1,38 @@
+﻿@model IEnumerable<App>
+
+@{ 
+    ViewBag.Title = "All Apps";
+    Layout = "_AdminLayout";
+}
+<table class="table table-striped table-bordered table">
+    <tr>
+        <th class="text-right">ID</th>
+        <th>Name</th>
+        <th class="text-center">Action</th>
+    </tr>
+    @foreach(App app in Model)
+    {
+       <tr>
+           <td class="text-right">@app.AppID</td>
+           <td>@app.Name</td>
+           <td class="text-center">
+               <form asp-action="Delete" method="post">
+                   <a asp-action="UpdateApp" class="btn btn-outline-primary"
+                      asp-route-key ="@app.AppID"
+                      >
+                       Edit
+                    </a>
+                   <input type="hidden" name="AppID" value="@app.AppID" />
+                   <button type="submit" class="btn btn-danger btn-sm">
+                       Delete
+                   </button>
+    
+               </form>
+           </td>
+       </tr>
+
+    }
+</table>
+<div class="text-center">
+    <a asp-action="AddApp" class="btn btn-primary">Add Apps</a>
+</div>
